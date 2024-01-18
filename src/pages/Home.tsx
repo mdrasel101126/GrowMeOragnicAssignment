@@ -1,4 +1,4 @@
-import { Container } from "@mui/material";
+import { Container, Typography } from "@mui/material";
 import Posts from "../conmponents/Posts/Posts";
 import Department from "../conmponents/Departments/Department";
 
@@ -8,10 +8,11 @@ import Department from "../conmponents/Departments/Department";
 const Home = () => {
     return (
       <Container>
-         <Container>
+         <Container sx={{marginTop:"20px"}}>
             <Posts/>
          </Container>
-         <Container>
+         <Container sx={{marginTop:"20px"}}>
+            <Typography variant="h4">Departments</Typography>
             <Department/>
          </Container>
       </Container>
